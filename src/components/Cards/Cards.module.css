@@ -1,0 +1,34 @@
+.container {
+    margin: 20px 0;
+}
+
+.root {
+    min-width: 500;
+    background-color: '#404040';
+}
+
+.title {
+    font-size: 20;
+    color: "#05d992";
+}
+
+.pos {
+    color: "#ffffff";
+}
+
+.button {
+    color: "#ffffff";
+}
+
+.card {
+    margin: 0 2% !important;
+}
+
+@media(max-width: 770px) {
+    .container {
+        margin: 5px 0px 0px;
+    }
+    .card {
+        margin: 2% 1% !important;
+    }
+}

@@ -1,0 +1,18 @@
+.container{
+    margin-top: 100px;
+    display: flex;
+    background-color: #222222;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    vertical-align: middle;
+}
+
+.logo{
+    color: #88bBcC;
+
+}
+
+.title{
+    color: #55b0d1;
+}
