@@ -1,10 +1,15 @@
 li {
-    padding: 10px 0;
+    margin-top: 0px;
+    padding: 5px 10px;
 }
+ul{
+    margin-top: 30px;
+    padding: 0px 66px;
 
+}
 button {
     font-size: 30px;
-    margin-right: 30px;
+    margin-right: 5px;
     color: white;
     background: transparent;
     border: none;
@@ -27,10 +32,20 @@ button {
   overflow: hidden;
   list-style-type: none;
   font-weight: bold;
+  float: right;
 }
 
 .show-nav {
     height: 10%;
+}
+
+.title {
+  overflow: hidden;
+  padding: 1% 40px 0px;
+  height: 10%;
+  list-style-type: none;
+  font-weight: bold;
+  float: left;
 }
 
 /* Media screen size */
@@ -42,8 +57,14 @@ button {
     .links {
         height: auto;
         display: flex;
+        float: right;
     }
 
+    ul{
+        margin-top: 10px;
+        padding: 0px 0px;
+    
+    }
     li {
         padding: 0px 15px;
     }
