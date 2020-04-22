@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { FaAlignRight } from 'react-icons/fa'
+import { FaAlignRight } from 'react-icons/fa';
+import { Link } from "react-router-dom";
 import ReactDOM from 'react-dom';
 import styles from './nav.module.css';
 
@@ -19,8 +20,8 @@ class nav extends Component {
               <FaAlignRight />
             </button>
             <ul className={this.state.toggle ? [styles.show-nav,styles.links] : styles.links}>
-              <li href="#">Home</li>
-              <li href="#">About us</li>
+              <li><Link variant="button" to="/" style={{textDecoration:"none",color:"white"}}>SHUBHAM PATEL</Link></li>
+              <li><Link variant="button" to="/projects" style={{textDecoration:"none",color:"white"}} >Projects</Link></li>
               <li href="#">Contact</li>
             </ul>
           </div>

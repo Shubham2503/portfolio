@@ -10,18 +10,19 @@ const About = () => {
         {
             name:"github",
             link:"https://github.com/Shubham2503",
-            icon:"AiFillInstagram"
+            icon:<AiFillGithub />
         },
         {
             name:"Instagram",
             link:"https://www.instagram.com/shubham_2503/",
-            icon:"AiFillGithub",
+            icon:<AiFillInstagram />,
         }
     ]
     return (
         <div className={styles.container}>
             <Typography variant="h4" className={styles.logo}>
                 <TiLink />
+                
             </Typography>
             <Typography variant="h4" className={styles.title}>
                 SHUBHAM PATEL
@@ -39,8 +40,10 @@ const About = () => {
             <Typography variant="subtitle1" className={styles.title}>
                 and love building everthing from sites to interactive apps."
             </Typography>
-
-            {list.map((a,i) => <p>{a.name}</p>)}
+            <div className={styles.icons}>
+                <Typography variant="h4">
+            {list.map((item,i) =><a href={item.link} target="_blank" key ={i} style={{textDecoration:"none",margin:"0px 10px"}} className={styles.logo}> {item.icon}</a>)}</Typography>
+            </div>
         </div>
     );
 }

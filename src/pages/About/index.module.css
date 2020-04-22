@@ -16,3 +16,9 @@
 .title{
     color: #55b0d1;
 }
+
+.icons{
+    display: flex;
+    flex-direction: row;
+    margin-top: 100px;
+}
