@@ -16,13 +16,12 @@ class nav extends Component {
       <div>
         <>
           <div className={styles.navBar}>
-            <Link variant="button" to="/" style={{textDecoration:"none",color:"white"}} className={styles.title}>SHUBHAM PATEL</Link>
+            <Link variant="button" to="/" style={{textDecoration:"none",color:"#55b0d1"}} className={styles.title}>SHUBHAM PATEL</Link>
             <button onClick={this.Toggle}>
               <FaAlignRight />
             </button>
             <ul className={this.state.toggle ? [styles.show-nav,styles.links] : styles.links}>
-              <li><Link variant="button" to="/projects" style={{textDecoration:"none",color:"white"}} >Projects</Link></li>
-              <li><Link variant="button" to="/projects" style={{textDecoration:"none",color:"white"}} >Projects</Link></li>
+              <li><Link variant="button" to="/projects" style={{textDecoration:"none",color:"#55b0d1"}} >Projects</Link></li>
             </ul>
           </div>
         </>

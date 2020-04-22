@@ -3,32 +3,38 @@
         {
             "name": "Ecosystem-Simulation",
             "desc": "A Simulation of evolving ecosystem made with Unity.",
-            "url": "https://github.com/Shubham2503/Ecosystem-Simulation"
+            "url": "https://github.com/Shubham2503/Ecosystem-Simulation",
+            "link": ""
         },
         {
             "name": "News E",
             "desc": "A Simulation of evolving ecosystem made with Unity.",
-            "url": "https://github.com/Shubham2503/NewsE"
+            "url": "https://github.com/Shubham2503/NewsE",
+            "link": "https://play.google.com/store/apps/details?id=com.innovative_coder.news"
         },
         {
-            "name": "Ecosystem-Simulation",
-            "desc": "A Simulation of evolving ecosystem made with Unity.",
-            "url": "https://github.com/Shubham2503/Ecosystem-Simulation"
+            "name": "COVID - 19 data visualization",
+            "desc": "visualization of COVID-19 realtime data ",
+            "url": "https://github.com/Shubham2503/COVID-19_realtime_data_visualization",
+            "link": "covid_19.surge.sh"
         },
         {
-            "name": "News E",
-            "desc": "A Simulation of evolving ecosystem made with Unity.",
-            "url": "https://github.com/Shubham2503/NewsE"
+            "name": "3D Visualization Of Function ",
+            "desc": "Visualization of function in 3D Space in unity ",
+            "url": "https://github.com/Shubham2503/3D_Visualization_Of_Function",
+            "link": ""
         },
         {
-            "name": "Ecosystem-Simulation",
-            "desc": "A Simulation of evolving ecosystem made with Unity.",
-            "url": "https://github.com/Shubham2503/Ecosystem-Simulation"
+            "name": "2D TopDown shooter",
+            "desc": "A 2D top-dow shooting gmae made with unity. ",
+            "url": "https://github.com/Shubham2503/2D_TopDown_shooter",
+            "link": ""
         },
         {
-            "name": "News E",
-            "desc": "A Simulation of evolving ecosystem made with Unity.",
-            "url": "https://github.com/Shubham2503/NewsE"
+            "name": "Algorithm Simulation",
+            "desc": "algorithm simulation made with P5.js ",
+            "url": "https://github.com/Shubham2503/Algorithm_Simulation",
+            "link": ""
         }
     ]
 }
