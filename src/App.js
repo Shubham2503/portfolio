@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbr from './components/navbr/nav';
 import Cards from './components/Cards/Cards';
 import AllCards from './components/Cards/AllCards';

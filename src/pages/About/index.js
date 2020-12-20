@@ -35,10 +35,16 @@ const About = () => {
                 <br />"I am a computer science undergraduate
                 </Typography>
             <Typography variant="subtitle1" className={styles.title}>
-                with proficiency over javascript, c++, React, Node and many others ...
+                with proficiency over
+                </Typography>
+                <Typography variant="subtitle1" className={styles.title}>
+                javascript, c++, React, Node and many others ...
                 </Typography>
             <Typography variant="subtitle1" className={styles.title}>
-                and love building everthing from sites to interactive apps."
+                and love building everthing from
+            </Typography>
+            <Typography variant="subtitle1" className={styles.title}>
+                sites to interactive apps."
             </Typography>
             <div className={styles.icons}>
                 <Typography variant="h4">
