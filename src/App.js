@@ -11,7 +11,7 @@ import Project from './pages/Projects';
 class App extends React.Component {
     render() {
         return (
-            <div style={{ backgroundColor: "#222222",height: "100%",width: "100%"}}>
+            <div>
                 <Router>
                     <Navbr />
                     <Switch>

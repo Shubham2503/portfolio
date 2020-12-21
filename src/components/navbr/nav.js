@@ -11,21 +11,24 @@ import styles from './nav.module.css';
 class nav extends Component {
     render() {
         return (
-            <div>
-                <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-                    <Navbar.Brand><Link style={{ textDecoration: "none", color: "#55b0d1" }} to="/">Shubham Patel</Link></Navbar.Brand>
+            <div style={{width: "80%",margin:"auto"}}>
+                <Navbar collapseOnSelect expand="lg">
+                    <Navbar.Brand><Link style={{ textDecoration: "none",fontFamily: "serif", color: "#55b0d1",fontSize: "40px"}} to="/">Shubham Patel</Link></Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
-                        <Nav className="mr-auto">
-                            <Nav.Link><Link to="/projects" style={{ textDecoration: "none", color: "#55b0d1" }}>Projects</Link></Nav.Link>
-                            <Nav.Link><Link to="/projects" style={{ textDecoration: "none", color: "#55b0d1" }}>Projects</Link></Nav.Link>
-                            {/* <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
-                <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
-              </NavDropdown> */}
+                        <Nav className="justify-content-end" style={{ width: "100%" }}>
+                            <Nav.Item>
+                                <Link className="nav-link" to="/projects" style={{ textDecoration: "none", color: "#55b0d1" }}>Projects</Link>
+                            </Nav.Item>
+                            <Nav.Item>
+                                <Link className="nav-link" to="/projects" style={{ textDecoration: "none", color: "#55b0d1" }}>Contact</Link>
+                            </Nav.Item>
+                            <Nav.Item>
+                                <Link className="nav-link" to="/projects" style={{ textDecoration: "none", color: "#55b0d1" }}>About</Link>
+                            </Nav.Item>
+                            <Nav.Item>
+                                <Link className="nav-link" to="/projects" style={{ textDecoration: "none", color: "#55b0d1" }}>Resume</Link>
+                            </Nav.Item>
                         </Nav>
                     </Navbar.Collapse>
                 </Navbar>

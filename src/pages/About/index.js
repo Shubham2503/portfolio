@@ -1,36 +1,30 @@
 import React from 'react';
 import { TiLink } from 'react-icons/ti';
 import styles from './index.module.css';
-import { Typography } from '@material-ui/core';
-import {AiFillInstagram,AiFillGithub} from 'react-icons/ai';
+import Container from 'react-bootstrap/Container'
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
+import { AiFillInstagram, AiFillGithub } from 'react-icons/ai';
 
 const About = () => {
     const openBrace = '\{';
+    const closeBrace = '\}';
     const list = [
         {
-            name:"github",
-            link:"https://github.com/Shubham2503",
-            icon:<AiFillGithub />
+            name: "github",
+            link: "https://github.com/Shubham2503",
+            icon: <AiFillGithub />
         },
         {
-            name:"Instagram",
-            link:"https://www.instagram.com/shubham_2503/",
-            icon:<AiFillInstagram />,
+            name: "Instagram",
+            link: "https://www.instagram.com/shubham_2503/",
+            icon: <AiFillInstagram />,
         }
     ]
     return (
-        <div className={styles.container}>
-            <Typography variant="h4" className={styles.logo}>
-                <TiLink />
+        <div style={{ height: "80%" }}>
+            {/*
                 
-            </Typography>
-            <Typography variant="h4" className={styles.title}>
-                SHUBHAM PATEL
-                </Typography>
-            <Typography variant="h5" className={styles.title}>
-                {openBrace}  SOFTWARE ENGINEEER }
-                    <br />
-            </Typography>
             <Typography variant="subtitle1" className={styles.title}>
                 <br />"I am a computer science undergraduate
                 </Typography>
@@ -45,12 +39,28 @@ const About = () => {
             </Typography>
             <Typography variant="subtitle1" className={styles.title}>
                 sites to interactive apps."
-            </Typography>
-            <div className={styles.icons}>
-                <Typography variant="h4">
-            {list.map((item,i) =><a href={item.link} target="_blank" key ={i} style={{textDecoration:"none",margin:"0px 10px"}} className={styles.logo}> {item.icon}</a>)}</Typography>
-            </div>
-        </div>
+            </Typography> */}
+            <Container className={styles.container}>
+                <Row>
+                    <Col>
+                        <h1>SHUBHAM PATEL</h1>
+                        <h4>
+                            {openBrace} Computer Science Undergraduate {closeBrace}
+                        </h4>
+                        <h4>
+                            "Hyy There !!!"
+                        </h4>
+                    </Col>
+                </Row>
+                <Row>
+                    <Col>
+                    <h4>
+                        {list.map((item, i) =><a href={item.link} target="_blank" key={i} style={{ textDecoration: "none" }} className={styles.logo}> {item.icon}</a>)}
+                    </h4>
+                    </Col>
+                </Row>
+            </Container>
+        </div >
     );
 }
 

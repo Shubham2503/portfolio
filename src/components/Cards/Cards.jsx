@@ -12,7 +12,6 @@ const useStyles = makeStyles({
   root: {
     minWidth: 250,
     minHeight: 170,
-    backgroundColor : "#404040",
   },
   title: {
     fontSize: 20,
@@ -20,10 +19,8 @@ const useStyles = makeStyles({
   },
   pos: {
     marginBottom: 12,
-    color: "#ffffff",
   },
   button: {
-    color: "#ffffff",
   },
   view:{
     display: "none",

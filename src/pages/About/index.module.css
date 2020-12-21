@@ -1,24 +1,38 @@
-.container{
-    height: 100%;
-    width: 100%;
-    display: flex;
-    background-color: #222222;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-
-.logo{
+.logo {
     color: #88bBcC;
-
 }
-
-.title{
+.container{
     color: #55b0d1;
+    text-align: center;
+    margin: auto;
+    margin-top: 100px;
 }
 
-.icons{
-    display: flex;
-    flex-direction: row;
-    margin-top: 100px;
+
+.title {
+    color: #55b0d1;
+    text-align: center;
+    margin: auto;
+}
+h1,h4
+{
+    margin: 0px;
+}
+
+.icons {
+    text-align: center;
+    margin: auto;
+}
+
+@media (max-width: 800px) {
+    h1{
+        font-size: 1.75rem;
+    }
+    h4{
+        font-size: 1rem;
+    }
+    .container
+    {
+        margin-top: 50px;
+    }
 }
