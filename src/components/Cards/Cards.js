@@ -3,7 +3,7 @@ import { Card, Row, Col, Container } from 'react-bootstrap'
 import { makeStyles } from '@material-ui/core/styles';
 import CardActions from '@material-ui/core/CardActions';
 import Button from '@material-ui/core/Button';
-import { RiBroadcastLine } from 'react-icons/ri';
+import { FiRss } from 'react-icons/fi';
 import { AiFillGithub } from 'react-icons/ai';
 
 import styles from './Cards.module.css';
@@ -16,6 +16,7 @@ const useStyles = makeStyles({
     title: {
         fontSize: 20,
         color: "#55b0d1",
+    height: "75px"
     },
     pos: {
         marginBottom: 12,
@@ -56,13 +57,14 @@ const Cards = (props) => {
                 </CardActions>
             </Card> */}
 
-            <Card bg="secondary" className="mb-2" text='white' style={{ minHeight: "200px" }}>
+            <Card bg="secondary" className="mb-2" text='white' style={{ height: "200px" }}>
                 <Card.Header className={classes.title}>{props.val.name}</Card.Header>
                 <Card.Body>
                     <Card.Text>
                         {props.val.desc}
                     </Card.Text>
                 </Card.Body>
+
                 <footer className="blockquote-footer">
                     <Container>
                         <Row>
@@ -71,7 +73,7 @@ const Cards = (props) => {
 
                             </Col>
                             <Col>
-                                <Button size="small" className={state.toggle ? [classes.button, classes.view] : classes.button} href={props.val.link} target="_blank">Live&nbsp;&nbsp; <RiBroadcastLine /></Button>
+                                <Button size="small" className={state.toggle ? [classes.button, classes.view] : classes.button} href={props.val.link} target="_blank">Live&nbsp;&nbsp; <FiRss /></Button>
                             </Col>
                         </Row>
                     </Container>
