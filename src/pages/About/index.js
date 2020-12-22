@@ -5,6 +5,7 @@ import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import { AiFillInstagram, AiFillGithub } from 'react-icons/ai';
+import logo from './../../assets/logo.png'
 
 const About = () => {
     const openBrace = '\{';
@@ -22,7 +23,7 @@ const About = () => {
         }
     ]
     return (
-        <div style={{ height: "80%" }}>
+        <div className={styles.container}>
             {/*
                 
             <Typography variant="subtitle1" className={styles.title}>
@@ -40,10 +41,10 @@ const About = () => {
             <Typography variant="subtitle1" className={styles.title}>
                 sites to interactive apps."
             </Typography> */}
-            <Container className={styles.container}>
+            <Container >
                 <Row>
                     <Col>
-                        <h1>SHUBHAM PATEL</h1>
+                        <h1>Hi I'm SHUBHAM PATEL</h1>
                         <h4>
                             {openBrace} Computer Science Undergraduate {closeBrace}
                         </h4>
@@ -52,13 +53,7 @@ const About = () => {
                         </h4>
                     </Col>
                 </Row>
-                <Row>
-                    <Col>
-                    <h4>
-                        {list.map((item, i) =><a href={item.link} target="_blank" key={i} style={{ textDecoration: "none" }} className={styles.logo}> {item.icon}</a>)}
-                    </h4>
-                    </Col>
-                </Row>
+                <Row><Col><img src={logo} style={{width: "300px"}}></img></Col></Row>
             </Container>
         </div >
     );

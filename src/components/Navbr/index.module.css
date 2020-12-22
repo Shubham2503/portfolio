@@ -1,0 +1,24 @@
+.navBrand {
+    text-decoration: none;
+    font-family: serif;
+    color: #55b0d1;
+    font-size: 40px;
+}
+
+.navLink {
+    text-decoration: none;
+    color: #55b0d1;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+/* Media screen size */
+
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+}

@@ -5,15 +5,14 @@ import NavDropdown from 'react-bootstrap/NavDropdown'
 import { FaAlignRight } from 'react-icons/fa';
 import { Link, NavLink } from "react-router-dom";
 import ReactDOM from 'react-dom';
-import styles from './nav.module.css';
+import styles from './index.module.css';
 
 
-class nav extends Component {
-    render() {
+const Navbr = () => {
         return (
-            <div style={{width: "80%",margin:"auto"}}>
-                <Navbar collapseOnSelect expand="lg">
-                    <Navbar.Brand><Link style={{ textDecoration: "none",fontFamily: "serif", color: "#55b0d1",fontSize: "40px"}} to="/">Shubham Patel</Link></Navbar.Brand>
+            <div className={styles.container} style={{}}>
+                <Navbar collapseOnSelect expand="md">
+                    <Navbar.Brand><Link className={styles.navBrand} to="/"> <h1>Shubham Patel</h1></Link></Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="justify-content-end" style={{ width: "100%" }}>
@@ -34,8 +33,6 @@ class nav extends Component {
                 </Navbar>
             </div>
         );
-
-    }
 }
 
-export default nav;
+export default Navbr;
