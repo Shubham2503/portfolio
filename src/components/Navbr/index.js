@@ -10,7 +10,7 @@ import styles from './index.module.css';
 
 const Navbr = () => {
         return (
-            <div className={styles.container} style={{}}>
+            <div className={styles.container}>
                 <Navbar collapseOnSelect expand="md">
                     <Navbar.Brand><Link className={styles.navBrand} style={{ textDecoration: "none", color: "#55b0d1" }} to="/"> <h1>Shubham Patel</h1></Link></Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -26,7 +26,16 @@ const Navbr = () => {
                                 <Link className="nav-link" to="/projects" style={{ textDecoration: "none", color: "#55b0d1" }}>About</Link>
                             </Nav.Item>
                             <Nav.Item>
-                                <Link className="nav-link" to="/projects" style={{ textDecoration: "none", color: "#55b0d1" }}>Resume</Link>
+                                <Nav.Link target="_blank" href="https://drive.google.com/file/d/1hmuiHj_iJgOsCpr7aPWa0Ed5cjoefBsq/view?usp=sharing" style={{ textDecoration: "none", color: "#55b0d1" }}
+//                                 onClick={() => {
+//                                     ReactGA.event({
+//                                       category: "Outgoing",
+//                                       action: "Download Resume"
+//                                     });
+//                                     window.location.href =
+//                                       "https://drive.google.com/file/d/1hmuiHj_iJgOsCpr7aPWa0Ed5cjoefBsq/view?usp=sharing";
+// }}
+                                >Resume</Nav.Link>
                             </Nav.Item>
                         </Nav>
                     </Navbar.Collapse>
