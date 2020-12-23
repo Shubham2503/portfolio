@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbr from './components/Navbr';
 import Cards from './components/Cards/Cards';
 import AllCards from './components/Cards/AllCards';
-import About from './pages/About';
+import Home from './pages/Home';
 import Footer from './components/Footer/Footer'
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Project from './pages/Projects';
@@ -25,7 +25,7 @@ class App extends React.Component {
                             <Contact />
                         </Route>
                         <Route path="/">
-                            <About />
+                            <Home />
                         </Route>
                     </Switch>
                     <Footer />

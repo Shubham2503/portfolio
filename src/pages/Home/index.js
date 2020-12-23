@@ -7,7 +7,7 @@ import Col from 'react-bootstrap/Col'
 import { AiFillInstagram, AiFillGithub } from 'react-icons/ai';
 import logo from './../../assets/logo.png'
 
-const About = () => {
+const Home = () => {
     const openBrace = '\{';
     const closeBrace = '\}';
     const list = [
@@ -59,4 +59,4 @@ const About = () => {
     );
 }
 
-export default About;
+export default Home;
