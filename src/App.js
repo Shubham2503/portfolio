@@ -8,6 +8,7 @@ import About from './pages/About';
 import Footer from './components/Footer/Footer'
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Project from './pages/Projects';
+import Contact from './pages/Contact';
 import styles from './App.module.css'
 
 class App extends React.Component {
@@ -19,6 +20,9 @@ class App extends React.Component {
                     <Switch>
                         <Route path="/projects">
                             <Project />
+                        </Route>
+                        <Route path="/contact">
+                            <Contact />
                         </Route>
                         <Route path="/">
                             <About />

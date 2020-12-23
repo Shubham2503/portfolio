@@ -20,7 +20,7 @@ const Navbr = () => {
                                 <Link className="nav-link" to="/projects" style={{ textDecoration: "none", color: "#55b0d1" }}>Projects</Link>
                             </Nav.Item>
                             <Nav.Item>
-                                <Link className="nav-link" to="/projects" style={{ textDecoration: "none", color: "#55b0d1" }}>Contact</Link>
+                                <Link className="nav-link" to="/contact" style={{ textDecoration: "none", color: "#55b0d1" }}>Contact</Link>
                             </Nav.Item>
                             <Nav.Item>
                                 <Link className="nav-link" to="/projects" style={{ textDecoration: "none", color: "#55b0d1" }}>About</Link>
