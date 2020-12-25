@@ -57,7 +57,7 @@ const Cards = (props) => {
                 </CardActions>
             </Card> */}
 
-            <Card bg="secondary" className="mb-2" text='white' style={{ height: "200px" }}>
+            <Card  bg="secondary" md={2} className={styles.mainCard} text='white' style={{ height: "200px" }}>
                 <Card.Header className={classes.title}>{props.val.name}</Card.Header>
                 <Card.Body>
                     <Card.Text>

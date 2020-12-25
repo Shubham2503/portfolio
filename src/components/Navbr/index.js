@@ -23,7 +23,7 @@ const Navbr = () => {
                                 <Link className="nav-link" to="/contact" style={{ textDecoration: "none", color: "#55b0d1" }}>Contact</Link>
                             </Nav.Item>
                             <Nav.Item>
-                                <Link className="nav-link" to="/projects" style={{ textDecoration: "none", color: "#55b0d1" }}>About</Link>
+                                <Link className="nav-link" to="/about" style={{ textDecoration: "none", color: "#55b0d1" }}>About</Link>
                             </Nav.Item>
                             <Nav.Item>
                                 <Nav.Link target="_blank" href="https://drive.google.com/file/d/1hmuiHj_iJgOsCpr7aPWa0Ed5cjoefBsq/view?usp=sharing" style={{ textDecoration: "none", color: "#55b0d1" }}

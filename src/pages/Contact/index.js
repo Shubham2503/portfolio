@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom'
 import styles from './index.module.css';
 import { Row, Form, Col, Container, Button } from 'react-bootstrap'
 import Alert from 'react-bootstrap/Alert'
+import rocket from '../../assets/rocket.png'
 
 const config = {
     //cors: 'https://shubham2503.surge.sh/', // <optional> doesn't display the cors error
@@ -86,7 +87,8 @@ class Contact extends React.Component {
                     : (
                         <div className={styles.contactForm}>
                             <div className={styles.contactImage}>
-                                <img src="https://image.ibb.co/kUagtU/rocket_contact.png" alt="rocket_contact" />
+                                <img src={rocket} alt="rocket_contact" />
+                                {/* https://image.ibb.co/kUagtU/rocket_contact.png */}
                             </div>
                             <Form className={styles.formMain} method="post" onSubmit={this.doSubmit}>
                                 <h3>Drop Us a Message</h3>

@@ -4,12 +4,14 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbr from './components/Navbr';
 import Cards from './components/Cards/Cards';
 import AllCards from './components/Cards/AllCards';
-import Home from './pages/Home';
 import Footer from './components/Footer/Footer'
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Home from './pages/Home';
 import Project from './pages/Projects';
 import Contact from './pages/Contact';
-import styles from './App.module.css'
+import About from './pages/About'
+
+import styles from './App.module.css';
 
 class App extends React.Component {
     render() {
@@ -23,6 +25,9 @@ class App extends React.Component {
                         </Route>
                         <Route path="/contact">
                             <Contact />
+                        </Route>
+                        <Route path="/about">
+                            <About />
                         </Route>
                         <Route path="/">
                             <Home />
