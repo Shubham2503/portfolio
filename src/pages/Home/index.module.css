@@ -1,28 +1,14 @@
-.logo {
-    color: #88bBcC;
-}
 .container{
-    color: #55b0d1;
+    color: var(--headline);
     text-align: center;
     margin: auto;
     padding-bottom: 6rem;
     margin-top: 100px; 
 }
 
-
-.title {
-    color: #55b0d1;
-    text-align: center;
-    margin: auto;
-}
 h1,h4
 {
     margin: 0px;
-}
-
-.icons {
-    text-align: center;
-    margin: auto;
 }
 
 @media (max-width: 768px) {

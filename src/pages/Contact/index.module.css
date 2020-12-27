@@ -1,15 +1,11 @@
-
-body{
-    background: -webkit-linear-gradient(left, #fff, #fff);
-}
 .container{
-    color: #55b0d1;
+    color: var(--text-primary);
     text-align: center;
     margin: auto;
     padding-bottom: 6rem;
 }
 .contactForm{
-    background: #fff;
+    /* background: var(--text-secondary); */
     margin-top: 50px;
     margin-bottom: 5%;
     width: 100%;
@@ -37,16 +33,16 @@ body{
     margin-bottom: 8%;
     margin-top: -20%;
     text-align: center;
-    color: #0062cc;
+    color: var(--headline);
 }
 .contactForm .btnContact {
     width: 50%;
     border: none;
     border-radius: 1rem;
     padding: 1.5%;
-    background: #dc3545;
+    background: var(--headline);
     font-weight: 600;
-    color: #fff;
+    color: var(--bg);
     cursor: pointer;
 }
 .btnContactSubmit
@@ -54,8 +50,8 @@ body{
     width: 50%;
     border-radius: 1rem;
     padding: 1.5%;
-    color: #fff;
-    background-color: #0062cc;
+    color: var(--text-secondary);
+    background-color: var(--text-primary);
     border: none;
     cursor: pointer;
 }

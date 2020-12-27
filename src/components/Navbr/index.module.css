@@ -1,13 +1,23 @@
 .navBrand {
     text-decoration: none;
     font-family: serif;
-    color: #55b0d1;
+    color: var(--headline); 
     font-size: 40px;
 }
 
-.navLink {
+.navLink{
     text-decoration: none;
-    color: #55b0d1;
+    margin: 0 10px;
+    text-decoration: none;
+    color: var(--headline); 
+}
+.navLink:hover{
+    text-decoration: none;
+
+}
+
+.navBrand:hover{
+    color: var(--headline); 
 }
 
 .container {

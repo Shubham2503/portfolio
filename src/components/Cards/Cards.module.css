@@ -3,28 +3,25 @@
 }
 
 .title {
-    font-size: 20;
-    color: #05d992;
+    font-size: 1.25rem;
+    color: var(--headline);
+    height: 75px;
+    text-shadow: 0 2px 5px rgba(33, 33, 33, 0.15);
 }
 
-.pos {
-    color: "#ffffff";
-}
-
-.button {
-    color: "#ffffff";
+.desc{
+    color: var(--text-secondary);
+    text-shadow: 0 2px 5px rgba(33, 33, 33, 0.5);
 }
 
 .card {
-    margin: 0 2% !important;    
-    background: #fff;
+    margin: 0 2% !important;
     border-radius: 6px;
-    color: rgba(0, 0, 0, 0.87);
-    text-shadow: 0 2px 5px rgba(33, 33, 33, 0.5);
 
 }
 
 .mainCard{
+    background-color: #000;
     box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.15), 0 4px 25px 0px rgba(0, 0, 0, 0.1), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
     margin-top: 20px;
 }

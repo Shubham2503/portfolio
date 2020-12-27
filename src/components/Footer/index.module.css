@@ -1,11 +1,9 @@
 .logo {
-    color: #88bBcC;
+    color: var(--text-primary);
 }
 
-.container {
-    color: #55b0d1;
-    text-align: center;
-    margin: auto;
+.logo:hover{
+    color: var(--headline)
 }
 
 .footer {
@@ -13,23 +11,12 @@
     bottom: 0;
     width: 100%;
     min-height: 6rem;
-    color: #55b0d1;
+    color: var(--headline);
     text-align: center;
-}
-
-.title {
-    color: #55b0d1;
-    text-align: center;
-    margin: auto;
 }
 
 h1, h4 {
     margin: 0px;
-}
-
-.icons {
-    text-align: center;
-    margin: auto;
 }
 
 @media (max-width: 768px) {
@@ -38,8 +25,5 @@ h1, h4 {
     }
     h4 {
         font-size: 1rem;
-    }
-    .container {
-        margin-top: 50px;
     }
 }

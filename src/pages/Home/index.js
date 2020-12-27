@@ -10,18 +10,6 @@ import logo from './../../assets/logo.png'
 const Home = () => {
     const openBrace = '\{';
     const closeBrace = '\}';
-    const list = [
-        {
-            name: "github",
-            link: "https://github.com/Shubham2503",
-            icon: <AiFillGithub />
-        },
-        {
-            name: "Instagram",
-            link: "https://www.instagram.com/shubham_2503/",
-            icon: <AiFillInstagram />,
-        }
-    ]
     return (
         <div className={styles.container}>
             <Container >

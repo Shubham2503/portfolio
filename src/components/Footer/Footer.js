@@ -26,7 +26,7 @@ const Footer = () => {
                 <Container>
                     <Row style={{ width: "100%" }}>
                         <Col>
-                            <h4>Get in Touch ...!</h4>
+                            <h4>Get in Touch</h4>
                         </Col>
                     </Row>
                     <Row style={{marginBottom:"20px"}}>

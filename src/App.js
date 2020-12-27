@@ -17,6 +17,7 @@ class App extends React.Component {
     render() {
         return (
             <div className={styles.container}>
+            <ParticlesBg className={styles.particles} type="cobweb" color="#000000"  bg={true} />
                 <Router>
                     <Navbr />
                     <Switch>
@@ -35,7 +36,6 @@ class App extends React.Component {
                     </Switch>
                     <Footer />
                 </Router>
-                <ParticlesBg type="cobweb" bg={true} />
             </div>
         );
     }

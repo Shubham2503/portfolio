@@ -19,7 +19,7 @@ const About = () => {
                     <Col md={4} style={{ textAlign: "center", fontFamily: "serif",marginBottom:"30px" }} >
                         <img className={styles.profile} src={image} />
                         <br />
-                        <h3 style={{ fontFamily: "serif" }}>Shubham Patel</h3>
+                        <h3 className={styles.heading} style={{ fontFamily: "serif" }}>Shubham Patel</h3>
                         <br />
                         <h4 style={{padding: "0px",margin:"0px"}}>Ping me !!!</h4>
                         <div style={{fontSize: "1.25rem"}}>
@@ -36,14 +36,14 @@ const About = () => {
                             I am currently pursuing my B.Tech in Computer engineering from Sardar Vallabhbhai National Institute of technology (SVNIT).
                         </h5>
                         <br />
-                        <h3>Recent Accomplishment </h3>
+                        <h3 className={styles.heading}>Recent Accomplishment </h3>
                         <ul>
                             <li>
                                 <b>Finalist</b> at JP Morgan CFG Hackthon 2020
                             </li>
                         </ul>
                         <br />
-                        <h3>Certificates</h3>
+                        <h3 className={styles.heading}>Certificates</h3>
                         <Courses />
                     </Col>
                 </Row>

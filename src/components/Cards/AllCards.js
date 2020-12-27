@@ -9,7 +9,7 @@ const AllCards = () => {
     //console.log(data);
     return (
         <div className={styles.container} style={{margin:"0px"}}>
-            <Grid container justify="center" >
+            <Grid container justify="center">
                 {data.repo.map((p, i) =>
                     <Grid xs={12} sm={5} md={3} className={styles.card}>
                         <Cards val={p} />

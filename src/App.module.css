@@ -1,4 +1,14 @@
+:root{
+    --bg: #f4f6ff;
+    --headline: #213e3b;
+    --text-primary: #41aea9;
+    --text-secondary: #a6f6f1;
+
+}
+.particles{
+}
 .container {
     position: relative;
     min-height: 100vh;
+    background: var(--bg);
 }
