@@ -10,7 +10,7 @@ body{
 }
 .contactForm{
     background: #fff;
-    margin-top: 10%;
+    margin-top: 50px;
     margin-bottom: 5%;
     width: 100%;
 }
@@ -22,12 +22,13 @@ body{
 }
 .contactImage img{
     border-radius: 6rem;
-    width: 11%;
+    width: 90px;
     margin-top: -3%;
     transform: rotate(29deg);
 }
 .contactForm .formMain{
     padding: 14%;
+    padding-bottom: 0px;
 }
 .contactForm .formMain .row{
     margin-bottom: -7%;

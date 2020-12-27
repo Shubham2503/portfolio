@@ -16,7 +16,7 @@ const About = () => {
                 </Row>
 
                 <Row >
-                    <Col md={4} style={{ textAlign: "center", fontFamily: "serif" }} >
+                    <Col md={4} style={{ textAlign: "center", fontFamily: "serif",marginBottom:"30px" }} >
                         <img className={styles.profile} src={image} />
                         <br />
                         <h3 style={{ fontFamily: "serif" }}>Shubham Patel</h3>
