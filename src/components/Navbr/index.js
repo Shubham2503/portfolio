@@ -13,7 +13,7 @@ const Navbr = () => {
     return (
         <div className={styles.container}>
             <Navbar collapseOnSelect expand="md">
-                <Navbar.Brand><Link className={styles.navBrand} style={{ textDecoration: "none"}} to="/"> <h1>Shubham Patel</h1></Link></Navbar.Brand>
+                <Navbar.Brand><Link className={styles.navBrand} style={{ textDecoration: "none"}} to="/"> <h1 className={styles.head1} >Shubham Patel</h1></Link></Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="justify-content-end" style={{ width: "100%" }}>

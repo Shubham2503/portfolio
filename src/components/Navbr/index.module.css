@@ -23,6 +23,7 @@
 .container {
     width: 80%;
     margin: auto;
+    
 }
 
 /* Media screen size */
@@ -30,5 +31,8 @@
 @media (max-width: 768px) {
     .container {
         width: 95%;
+    }
+    .head1{
+        font-size: 1.75rem;
     }
 }

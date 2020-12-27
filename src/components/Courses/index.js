@@ -14,10 +14,6 @@ const Courses = () => {
                         src={Algorithemic_Toolbox}
                         alt="Algorithemic_Toolbox"
                     />
-                    <Carousel.Caption>
-                        <h3 style={{color: "#000"}}>Algorithemic Toolbox</h3>
-                        <p style={{color: "#000"}}>UC San Diego (Coursera).</p>
-                    </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
                     <Image
@@ -25,11 +21,6 @@ const Courses = () => {
                         src={Machine_Learning}
                         alt="Machine_Learning"
                     />
-
-                    <Carousel.Caption>
-                        <h3 style={{color: "#000"}}>Machine Learning</h3>
-                        <p style={{color: "#000"}}>Standford (Coursera).</p>
-                    </Carousel.Caption>
                 </Carousel.Item>
             </Carousel>
         </div>

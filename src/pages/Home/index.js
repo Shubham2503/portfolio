@@ -15,12 +15,12 @@ const Home = () => {
             <Container >
                 <Row>
                     <Col>
-                        <h1>Hi I'm SHUBHAM PATEL</h1>
-                        <h4>
+                        <h1 className={styles.head1}>Hi I'm SHUBHAM PATEL</h1>
+                        <h4 className={styles.head4}>
                             {openBrace} Computer Science Undergraduate {closeBrace}
                         </h4>
-                        <h4>
-                            "Hyy There !!!"
+                        <h4 className={styles.head4}>
+                            "Hyy There !!!I am a student at SVNIT and I love building things from websites to mobile applications."
                         </h4>
                     </Col>
                 </Row>
