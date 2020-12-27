@@ -1,50 +1,53 @@
 import React from 'react';
 import styles from './index.module.css'
 import image from './../../assets/image.jpg'
-import { Container, Row, Col } from 'react-bootstrap'
+import { Container, Row, Col,Button } from 'react-bootstrap'
+import Courses from './../../components/Courses'
+import { MdEmail } from 'react-icons/md'
+import { FaLinkedinIn } from 'react-icons/fa'
 
 const About = () => {
 
     return (
         <div className={styles.container} >
-            <Container fluid={true} >
+            <Container>
                 <Row className={styles.title}>
                     <h1>About me...!</h1>
                 </Row>
+
                 <Row >
                     <Col md={4} style={{ textAlign: "center", fontFamily: "serif" }} >
                         <img className={styles.profile} src={image} />
-                        <h4 style={{ fontFamily: "serif" }}>Shubham Patel</h4>
-                        <h4>Ping me !!!</h4>
-                        <a>Email </a>
-                        <a>LinkedIn</a>
+                        <br />
+                        <h3 style={{ fontFamily: "serif" }}>Shubham Patel</h3>
+                        <br />
+                        <h4 style={{padding: "0px",margin:"0px"}}>Ping me !!!</h4>
+                        <div style={{fontSize: "1.25rem"}}>
+                        <MdEmail /> &nbsp;
+                        <FaLinkedinIn />
+                        </div>
+                        <br />
+                        <Button variant="dark">Here's My Resume</Button>
+
                     </Col>
                     <Col>
-                        <h4 style={{ marginBottom: "0px" }}>Hi, I'm Shubham Patel.</h4>
-                        <h4>
+                        <h5 style={{ marginBottom: "0px" }}>Hi, I'm Shubham Patel.</h5>
+                        <h5>
                             I am currently pursuing my B.Tech in Computer engineering from Sardar Vallabhbhai National Institute of technology (SVNIT).
-                        </h4>
-
-                        <h2>Recent Accomplishments </h2>
+                        </h5>
+                        <br />
+                        <h3>Recent Accomplishment </h3>
                         <ul>
                             <li>
-                                Finalist at JP Morgan CFG Hackthon 2020
+                                <b>Finalist</b> at JP Morgan CFG Hackthon 2020
                             </li>
                         </ul>
-                        <h2>Education</h2>
-                        <ul>
-                            <li>SVNIT</li>
-                            <li>HSC</li>
-                            <li>SSC</li>
-                        </ul>
-                        <h2>Certificates</h2>
-                        <ul>
-                            <li>ML</li>
-                            <li>Algorithemic Toolbox</li>
-                        </ul>
-
+                        <br />
+                        <h3>Certificates</h3>
+                        <Courses />
                     </Col>
                 </Row>
+
             </Container>
         </div>
 
