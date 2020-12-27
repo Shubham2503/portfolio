@@ -16,26 +16,30 @@ import styles from './App.module.css';
 class App extends React.Component {
     render() {
         return (
-            <div className={styles.container}>
-            <ParticlesBg className={styles.particles} type="cobweb" color="#000000"  bg={true} />
-                <Router>
-                    <Navbr />
-                    <Switch>
-                        <Route path="/projects">
-                            <Project />
-                        </Route>
-                        <Route path="/contact">
-                            <Contact />
-                        </Route>
-                        <Route path="/about">
-                            <About />
-                        </Route>
-                        <Route path="/">
-                            <Home />
-                        </Route>
-                    </Switch>
-                    <Footer />
-                </Router>
+            <div>
+            <div className={styles.particles}>
+                <ParticlesBg type="cobweb" color="#999999" bg={false} />
+            </div>
+                <div className={styles.container}>
+                    <Router>
+                        <Navbr />
+                        <Switch>
+                            <Route path="/projects">
+                                <Project />
+                            </Route>
+                            <Route path="/contact">
+                                <Contact />
+                            </Route>
+                            <Route path="/about">
+                                <About />
+                            </Route>
+                            <Route path="/">
+                                <Home />
+                            </Route>
+                        </Switch>
+                        <Footer />
+                    </Router>
+                </div>
             </div>
         );
     }
