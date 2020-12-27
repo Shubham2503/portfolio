@@ -10,7 +10,7 @@ import Home from './pages/Home';
 import Project from './pages/Projects';
 import Contact from './pages/Contact';
 import About from './pages/About'
-
+import ParticlesBg from 'particles-bg'
 import styles from './App.module.css';
 
 class App extends React.Component {
@@ -35,6 +35,7 @@ class App extends React.Component {
                     </Switch>
                     <Footer />
                 </Router>
+                <ParticlesBg type="cobweb" bg={true} />
             </div>
         );
     }
