@@ -1,11 +1,10 @@
 import React from 'react';
-import { TiLink } from 'react-icons/ti';
 import styles from './index.module.css';
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import { AiFillInstagram, AiFillGithub } from 'react-icons/ai';
-import logo from './../../assets/logo.png'
+import { FaLinkedinIn } from 'react-icons/fa'
 
 const Footer = () => {
     const list = [
@@ -13,6 +12,11 @@ const Footer = () => {
             name: "github",
             link: "https://github.com/Shubham2503",
             icon: <AiFillGithub />
+        },
+        {
+            name: "LinkedIn",
+            link: "https://www.linkedin.com/in/shubham-patel-254820174/",
+            icon: <FaLinkedinIn />,
         },
         {
             name: "Instagram",

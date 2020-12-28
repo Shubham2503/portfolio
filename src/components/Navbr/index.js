@@ -7,7 +7,6 @@ import { Link, NavLink } from "react-router-dom";
 import ReactDOM from 'react-dom';
 import styles from './index.module.css';
 
-
 const Navbr = () => {
     const resume_link = "https://drive.google.com/file/d/1hmuiHj_iJgOsCpr7aPWa0Ed5cjoefBsq/view?usp=sharing";
     return (

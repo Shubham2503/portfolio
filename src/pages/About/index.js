@@ -8,6 +8,7 @@ import { FaLinkedinIn } from 'react-icons/fa'
 
 const About = () => {
 
+    const resume_link = "https://drive.google.com/file/d/1hmuiHj_iJgOsCpr7aPWa0Ed5cjoefBsq/view?usp=sharing";
     return (
         <div className={styles.container} >
             <Container>
@@ -23,11 +24,12 @@ const About = () => {
                         <br />
                         <h4 style={{padding: "0px",margin:"0px"}}>Ping me !!!</h4>
                         <div style={{fontSize: "1.25rem"}}>
-                        <MdEmail /> &nbsp;
-                        <FaLinkedinIn />
+
+                        <a className={styles.links} href="mailto:shubhamp2531@gmail.com" target="_blank"><MdEmail /></a>
+                        <a className={styles.links} href="https://www.linkedin.com/in/shubham-patel-254820174/" target="_blank"><FaLinkedinIn /></a>
                         </div>
                         <br />
-                        <Button variant="dark">Here's My Resume</Button>
+                        <Button href={resume_link} target="_blank" variant="dark">Here's My Resume</Button>
 
                     </Col>
                     <Col>

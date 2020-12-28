@@ -22,6 +22,16 @@
     color: var(--headline)
 }
 
+.links{
+    text-decoration: none;
+    margin: 0 5px;
+    text-decoration: none;
+    color: var(--text-primary); 
+}
+.links:hover{
+    text-decoration: none;
+}
+
 @media (max-width: 768px){
 
     .container {
