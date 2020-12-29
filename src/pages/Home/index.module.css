@@ -1,27 +1,35 @@
 .container{
     color: var(--headline);
-    text-align: center;
     margin: auto;
     padding-bottom: 6rem;
     margin-top: 100px; 
 }
+
 .head4{
     color: var(--text-primary);
+    margin: 10px 0px;
 }
-.head1,.head4
-{
+.head1{
+    font-size: 3.5rem;
     margin: 0px;
+
 }
 
 @media (max-width: 768px) {
     .head1{
-        font-size: 1.75rem;
+        font-size: 3rem;
     }
     .head4{
         font-size: 1rem;
     }
     .container
     {
-        margin-top: 70px;
+        margin-top: 50px;
+    }
+}
+
+@media (max-width: 576px){
+    .head1{
+        font-size: 1.5rem;
     }
 }

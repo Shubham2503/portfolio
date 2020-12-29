@@ -91,7 +91,7 @@ class Contact extends React.Component {
                                 {/* https://image.ibb.co/kUagtU/rocket_contact.png */}
                             </div>
                             <Form className={styles.formMain} method="post" onSubmit={this.doSubmit}>
-                                <h3>Drop a Message</h3>
+                                <h3>Drop a Message 💌</h3>
                                 <Row>
                                     <Col md={6}>
                                         <Form.Group>

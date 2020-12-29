@@ -19,7 +19,8 @@
 .title {
     justify-content: center;
     margin-bottom: 20px;
-    color: var(--headline)
+    color: var(--headline);
+    font-family: serif;
 }
 
 .links{

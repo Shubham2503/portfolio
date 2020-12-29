@@ -1,19 +1,25 @@
-.ccpi,
-.ccni {
+.ccpi, .ccni {
   height: 100px;
   width: 100px;
   color: black;
 }
 
-.ccni:after
-{
-    content: '>';
-  font-size: 40px;
+.ccni:after {
+  content: '>';
+  font-size: 30px;
   color: black;
+  margin-right: -30px;
 }
 
 .ccpi:after {
   content: '<';
-  font-size: 40px;
+  font-size: 30px;
   color: black;
+  margin-left: -30px;
+}
+
+@media (max-width:768px) {
+  .ccpi:after, .ccni:after {
+    font-size: 20px;
+  }
 }

@@ -5,7 +5,7 @@ import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import { AiFillInstagram, AiFillGithub } from 'react-icons/ai';
-import logo from './../../assets/logo.png'
+import logo from './../../assets/log.png'
 
 const Home = () => {
     const openBrace = '\{';
@@ -15,13 +15,13 @@ const Home = () => {
             <Container >
                 <Row>
                     <Col>
-                        <h1 className={styles.head1}>Hi I'm SHUBHAM PATEL</h1>
+                        <h1 className={styles.head1}>Hey there !!!</h1>
+                        <h1 className={styles.head1}> I'm SHUBHAM PATEL</h1>
                         <h4 className={styles.head4}>
-                            "Hyy There !!! I am a computer engineering undergraduate at SVNIT and I love building things from responsive websites to interactive mobile applications."
+                            "I am a computer engineering undergraduate at SVNIT and I love building things from responsive websites to interactive mobile applications."
                         </h4>
                     </Col>
                 </Row>
-                <Row><Col><img src={logo} style={{width: "300px"}}></img></Col></Row>
             </Container>
         </div >
     );
