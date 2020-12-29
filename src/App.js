@@ -18,7 +18,7 @@ class App extends React.Component {
         return (
             <div>
             <div className={styles.particles}>
-                <ParticlesBg type="cobweb" color="#999999" bg={false} />
+                <ParticlesBg type="cobweb" color="#aaaaaa" bg={false} />
             </div>
                 <div className={styles.container}>
                     <Router>

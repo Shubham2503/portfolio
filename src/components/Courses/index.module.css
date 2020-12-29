@@ -1,0 +1,19 @@
+.ccpi,
+.ccni {
+  height: 100px;
+  width: 100px;
+  color: black;
+}
+
+.ccni:after
+{
+    content: '>';
+  font-size: 40px;
+  color: black;
+}
+
+.ccpi:after {
+  content: '<';
+  font-size: 40px;
+  color: black;
+}
