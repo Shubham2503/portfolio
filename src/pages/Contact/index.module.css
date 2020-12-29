@@ -40,7 +40,7 @@
     border: none;
     border-radius: 1rem;
     padding: 1.5%;
-    background: var(--headline);
+    background: #1d2124;
     font-weight: 600;
     color: var(--bg);
     cursor: pointer;
@@ -55,3 +55,4 @@
     border: none;
     cursor: pointer;
 }
+

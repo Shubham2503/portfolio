@@ -4,8 +4,6 @@ import styles from './index.module.css';
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
-import { AiFillInstagram, AiFillGithub } from 'react-icons/ai';
-import logo from './../../assets/log.png'
 
 const Home = () => {
     const openBrace = '\{';

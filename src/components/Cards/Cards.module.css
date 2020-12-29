@@ -4,8 +4,8 @@
 
 .title {
     font-size: 1.25rem;
-    color: var(--headline);
-    height: 75px;
+    color: #ffffffec;
+    height: 80px;
     text-shadow: 0 2px 5px rgba(33, 33, 33, 0.15);
 }
 

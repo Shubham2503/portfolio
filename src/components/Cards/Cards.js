@@ -1,24 +1,11 @@
 import React from 'react';
 import { Card, Row, Col, Container } from 'react-bootstrap'
-import { makeStyles } from '@material-ui/core/styles';
-import CardActions from '@material-ui/core/CardActions';
 import Button from 'react-bootstrap/Button';
 import { FiRss } from 'react-icons/fi';
 import { AiFillGithub } from 'react-icons/ai';
-import { SiUnity } from 'react-icons/si'
 import styles from './Cards.module.css';
 
-const useStyles = makeStyles({
-    button: {
-        color: "white"
-    },
-    view: {
-        display: "none",
-    }
-});
-
 const Cards = (props) => {
-    const classes = useStyles();
     const state = {
         toggle: false
     }
@@ -36,15 +23,16 @@ const Cards = (props) => {
                         {props.val.desc}
                     </Card.Text>
                 </Card.Body>
-                <footer className="blockquote-footer">
+                <footer className="blockquote-footer" style={{marginBottom: "10px"}}>
                     <Container>
                         <Row>
                             <Col>
-                                <Button size="sm" variant="secondary" className={classes.button} href={props.val.url} target="_blank">Github&nbsp;<AiFillGithub /></Button>
+                                <Button size="sm" variant="secondary" href={props.val.url} target="_blank">Github&nbsp;<AiFillGithub /></Button>
                                 
                             </Col>
                             <Col>
-                                <Button size="sm" variant="secondary" className={state.toggle ? [classes.button, classes.view] : classes.button} href={props.val.link} target="_blank">Live&nbsp;<FiRss /></Button>
+                                { !state.toggle ?(<Button size="sm" variant="secondary"  href={props.val.link} target="_blank">Live&nbsp;<FiRss /></Button>) :  (<div> </div>)}
+                                
                             </Col>
                         </Row>
                     </Container>

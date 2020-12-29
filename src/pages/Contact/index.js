@@ -112,8 +112,8 @@ class Contact extends React.Component {
                                 </Row>
                                 <Row>
                                     <Col md={6}>
-                                        <Form.Group>
-                                            <Form.Control className={styles.formControl} type="submit" name="btnSubmit" className={styles.btnContact} value="Send Message" />
+                                        <Form.Group className={styles.wrapper}>
+                                            <Form.Control  className={styles.formControl} type="submit" name="btnSubmit" className={styles.btnContact} value="Send Message" />
                                         </Form.Group>
 
                                     </Col>
