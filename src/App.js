@@ -12,14 +12,40 @@ import Contact from './pages/Contact';
 import About from './pages/About'
 import ParticlesBg from 'particles-bg'
 import styles from './App.module.css';
+import './App.css'
 
 class App extends React.Component {
+
+    state = {
+        hideNav: true
+    }
+
+    componentDidMount() {
+        window.addEventListener("resize", this.resize.bind(this));
+        this.resize();
+    }
+
+    resize() {
+        let currentHideNav = (window.innerWidth <= 760);
+        if (currentHideNav !== this.state.hideNav) {
+            this.setState({ hideNav: currentHideNav });
+        }
+        console.log(this.state.hideNav);
+    }
+
+    componentWillUnmount() {
+        window.removeEventListener("resize", this.resize.bind(this));
+    }
+
     render() {
         return (
             <div>
-            <div className={styles.particles}>
-                <ParticlesBg type="cobweb" color="#aaaaaa" bg={false} />
-            </div>
+                <div className={styles.particles}>
+                    {!this.state.hideNav
+                        ? (<ParticlesBg type="cobweb" num={100} color="#aaaaaa" bg={false} />)
+                        : (<ParticlesBg type="cobweb" num={30} color="#aaaaaa" bg={false} />)
+                    }
+                </div>
                 <div className={styles.container}>
                     <Router>
                         <Navbr />

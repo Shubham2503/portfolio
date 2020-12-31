@@ -1,0 +1,10 @@
+.navbar-toggler.collapsed .navbar-toggler{
+    padding: 2px 8px;
+}
+.navbar-toggler-icon{
+    font-size: 15px;
+}
+
+.nav-item{
+    padding: 5px 0;
+}
