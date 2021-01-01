@@ -14,6 +14,7 @@
   position: relative;
   top: 50vh;
   left: 50vw;
+  margin-top: 20vh;
   animation: move-back 4s linear 0s infinite;
 }
 
