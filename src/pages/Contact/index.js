@@ -28,8 +28,8 @@ class Contact extends React.Component {
         const { inputs } = this.state;
         const formData = new FormData();
 
-        console.log(this.state);
-        console.log(inputs);
+        // console.log(this.state);
+        // console.log(inputs);
 
         // inputs.forEach(e => {
         //     formData.append(`entry.${e.id}`,e.value)
@@ -38,7 +38,6 @@ class Contact extends React.Component {
         formData.append(`entry.${inputs.email.id}`, inputs.email.value)
         formData.append(`entry.${inputs.phone.id}`, inputs.phone.value)
         formData.append(`entry.${inputs.message.id}`, inputs.message.value)
-
         const axios = require('axios');
 
         await axios({

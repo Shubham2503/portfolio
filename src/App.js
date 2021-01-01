@@ -18,12 +18,16 @@ import './App.css'
 class App extends React.Component {
 
     state = {
-        hideNav: true
+        hideNav: true,
+        load: true
     }
 
     componentDidMount() {
         window.addEventListener("resize", this.resize.bind(this));
         this.resize();
+        if (this.state.load) {
+            // this.turnOffRedTimeout = setTimeout(() => { this.setState(() => ({ load: false }))}, 500);
+        }
     }
 
     resize() {
@@ -31,7 +35,6 @@ class App extends React.Component {
         if (currentHideNav !== this.state.hideNav) {
             this.setState({ hideNav: currentHideNav });
         }
-        console.log(this.state.hideNav);
     }
 
     componentWillUnmount() {
@@ -39,6 +42,20 @@ class App extends React.Component {
     }
 
     render() {
+        if(this.state.load )
+        return (
+            <div>
+                <div className={styles.particles}>
+                    {!this.state.hideNav
+                        ? (<ParticlesBg type="cobweb" num={100} color="#aaaaaa" bg={false} />)
+                        : (<ParticlesBg type="cobweb" num={30} color="#aaaaaa" bg={false} />)
+                    }
+                </div>
+        <Loading />
+
+        </div>
+        );
+
         return (
             <div>
                 <div className={styles.particles}>
@@ -54,9 +71,6 @@ class App extends React.Component {
                             <Route path="/projects">
                                 <Project />
                             </Route>
-                            {/* <Route path="/loading">
-                                <Loading />
-                            </Route> */}
                             <Route path="/contact">
                                 <Contact />
                             </Route>
