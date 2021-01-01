@@ -10,6 +10,7 @@ import Home from './pages/Home';
 import Project from './pages/Projects';
 import Contact from './pages/Contact';
 import About from './pages/About'
+import Loading from './pages/Loading'
 import ParticlesBg from 'particles-bg'
 import styles from './App.module.css';
 import './App.css'
@@ -53,6 +54,9 @@ class App extends React.Component {
                             <Route path="/projects">
                                 <Project />
                             </Route>
+                            {/* <Route path="/loading">
+                                <Loading />
+                            </Route> */}
                             <Route path="/contact">
                                 <Contact />
                             </Route>

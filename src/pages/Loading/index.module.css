@@ -1,19 +1,11 @@
-.navbar-toggler.collapsed .navbar-toggler{
-    padding: 2px 8px;
-}
-.navbar-toggler-icon{
-    font-size: 15px;
-}
-
-.nav-item{
-    padding: 5px 0;
-}
-
-
+body {
+    height:100%;
+    background:#2B2D46;
+  }
   .canvas {
     position:relative;
-    top:50vh;
-    left:50vw;
+    top:120px;
+    left:30vw;
     animation: move-back 4s linear 0s infinite;
   }
   
@@ -21,14 +13,14 @@
     box-sizing:border-box;
     position:relative;
   }
-  .triangle.left {
+   .left {
     width: 30px;
     height: 60px;
     border-right: solid 30px #F9A47F;
     border-bottom: solid 30px transparent;
     border-top: solid 30px transparent;
   }
-  .triangle.right {
+   .right {
     width: 30px;
     height: 60px;
     border-left: solid 30px #F9A47F;
@@ -36,20 +28,20 @@
     border-top: solid 30px transparent;
   }
   
-  #p2 {
+  .p2 {
     top:-30px;
     animation: rotate-left-1 4s ease-in-out 0s infinite normal forwards running;
   }
-  #p3 {
+  .p3 {
     top:-60px;
     animation: rotate-right-2 4s ease-in-out 0s infinite normal forwards running;
   }
-  #p4 {
+  .p4 {
     top:-90px;
     animation: rotate-left-2 4s ease-in-out 0s infinite normal forwards running;
   }
   
-  #p1 {
+.p1 {
     animation: rotate-right-1 4s ease-in-out 0s infinite normal forwards running;
   }
   
@@ -62,7 +54,7 @@
       transform:rotate(180deg);
     }
     25%,100% {
-      transform-origin:90px 120px;
+      transform-origin:90px top;
       transform:rotate(360deg) translatey(120px);
     }
   }
@@ -76,7 +68,7 @@
       transform:rotate(180deg);
     }
     75%,100% {
-      transform-origin:90px 120px;
+      transform-origin:90px top;
       transform:rotate(360deg) translatey(120px);
     }
   }
