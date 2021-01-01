@@ -5,6 +5,7 @@ import Navbr from './components/Navbr';
 import Cards from './components/Cards/Cards';
 import AllCards from './components/Cards/AllCards';
 import Footer from './components/Footer/Footer'
+import Particles from './components/Particles'
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from './pages/Home';
 import Project from './pages/Projects';
@@ -18,52 +19,30 @@ import './App.css'
 class App extends React.Component {
 
     state = {
-        hideNav: true,
         load: true
     }
 
     componentDidMount() {
-        window.addEventListener("resize", this.resize.bind(this));
-        this.resize();
         if (this.state.load) {
-            // this.turnOffRedTimeout = setTimeout(() => { this.setState(() => ({ load: false }))}, 500);
+            this.turnOffRedTimeout = setTimeout(() => { this.setState(() => ({ load: false }))}, 1000);
         }
     }
-
-    resize() {
-        let currentHideNav = (window.innerWidth <= 760);
-        if (currentHideNav !== this.state.hideNav) {
-            this.setState({ hideNav: currentHideNav });
-        }
-    }
-
     componentWillUnmount() {
-        window.removeEventListener("resize", this.resize.bind(this));
+        clearTimeout(this.turnOffRedTimeout);
     }
 
     render() {
-        if(this.state.load )
-        return (
-            <div>
-                <div className={styles.particles}>
-                    {!this.state.hideNav
-                        ? (<ParticlesBg type="cobweb" num={100} color="#aaaaaa" bg={false} />)
-                        : (<ParticlesBg type="cobweb" num={30} color="#aaaaaa" bg={false} />)
-                    }
+        if (this.state.load)
+            return (
+                <div>
+                    <Particles />
+                    <Loading />
                 </div>
-        <Loading />
-
-        </div>
-        );
+            );
 
         return (
             <div>
-                <div className={styles.particles}>
-                    {!this.state.hideNav
-                        ? (<ParticlesBg type="cobweb" num={100} color="#aaaaaa" bg={false} />)
-                        : (<ParticlesBg type="cobweb" num={30} color="#aaaaaa" bg={false} />)
-                    }
-                </div>
+                <Particles />
                 <div className={styles.container}>
                     <Router>
                         <Navbr />
