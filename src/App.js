@@ -22,13 +22,8 @@ class App extends React.Component {
         load: true
     }
 
-    componentDidMount() {
-        if (this.state.load) {
-            this.turnOffRedTimeout = setTimeout(() => { this.setState(() => ({ load: false }))}, 1000);
-        }
-    }
-    componentWillUnmount() {
-        clearTimeout(this.turnOffRedTimeout);
+    is_loaded = (data) => {
+        this.setState({load: data})
     }
 
     render() {
@@ -36,7 +31,7 @@ class App extends React.Component {
             return (
                 <div>
                     <Particles />
-                    <Loading />
+                    <Loading sendStatusTOParent = {this.is_loaded}/>
                 </div>
             );
 
