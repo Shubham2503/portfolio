@@ -16,7 +16,7 @@ import './App.css'
 class App extends React.Component {
 
     state = {
-        load: false
+        load: true
     }
 
     is_loaded = (data) => {
