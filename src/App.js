@@ -1,25 +1,22 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import Navbr from './components/Navbr';
-import Cards from './components/Cards/Cards';
-import AllCards from './components/Cards/AllCards';
+import React from 'react'
+import ReactDOM from 'react-dom'
+import 'bootstrap/dist/css/bootstrap.min.css'
+import Navbr from './components/Navbr'
 import Footer from './components/Footer/Footer'
 import Particles from './components/Particles'
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Home from './pages/Home';
-import Project from './pages/Projects';
-import Contact from './pages/Contact';
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
+import Home from './pages/Home'
+import Project from './pages/Projects'
+import Contact from './pages/Contact'
 import About from './pages/About'
 import Loading from './pages/Loading'
-import ParticlesBg from 'particles-bg'
-import styles from './App.module.css';
+import styles from './App.module.css'
 import './App.css'
 
 class App extends React.Component {
 
     state = {
-        load: true
+        load: false
     }
 
     is_loaded = (data) => {

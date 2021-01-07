@@ -1,7 +1,6 @@
-import React from 'react';
+import React from 'react'
 import styles from './index.module.css'
 import Algorithemic_Toolbox from './../../assets/Algorithemic_Toolbox.png'
-import { makeStyles } from '@material-ui/core/styles';
 import Machine_Learning from './../../assets/Machine_Learning.png'
 import { Carousel, Image } from 'react-bootstrap'
 

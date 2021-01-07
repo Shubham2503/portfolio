@@ -1,11 +1,8 @@
-import React, { Component } from 'react';
-import Navbar from 'react-bootstrap/Navbar';
-import Nav from 'react-bootstrap/Nav';
-import NavDropdown from 'react-bootstrap/NavDropdown'
-import { FaAlignRight } from 'react-icons/fa';
-import { Link, NavLink } from "react-router-dom";
-import ReactDOM from 'react-dom';
-import styles from './index.module.css';
+import React, { Component } from 'react'
+import Navbar from 'react-bootstrap/Navbar'
+import Nav from 'react-bootstrap/Nav'
+import { Link, NavLink } from "react-router-dom"
+import styles from './index.module.css'
 
 const Navbr = () => {
     const resume_link = "https://drive.google.com/file/d/1hmuiHj_iJgOsCpr7aPWa0Ed5cjoefBsq/view?usp=sharing";
