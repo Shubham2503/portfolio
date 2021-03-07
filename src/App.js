@@ -16,11 +16,11 @@ import './App.css'
 class App extends React.Component {
 
     state = {
-        load: true
+        load: false
     }
 
     is_loaded = (data) => {
-        this.setState({load: data})
+        this.setState({ load: data })
     }
 
     render() {
@@ -28,7 +28,7 @@ class App extends React.Component {
             return (
                 <div>
                     <Particles />
-                    <Loading sendStatusTOParent = {this.is_loaded}/>
+                    <Loading sendStatusTOParent={this.is_loaded} />
                 </div>
             );
 

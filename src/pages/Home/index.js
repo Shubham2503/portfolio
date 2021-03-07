@@ -5,8 +5,6 @@ import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 
 const Home = () => {
-    const openBrace = '\{';
-    const closeBrace = '\}';
     return (
         <div className={styles.container}>
             <Container >
